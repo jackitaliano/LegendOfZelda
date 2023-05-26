@@ -1,5 +1,9 @@
 # JalPals
 OSU CSE 3902 Interactive Systems Project: The Legend of Zelda NES
+<br/>Team JalPals
+
+## Framework
+Microsoft .NET MonoGame framework
 
 ## Controls
 ### Player
