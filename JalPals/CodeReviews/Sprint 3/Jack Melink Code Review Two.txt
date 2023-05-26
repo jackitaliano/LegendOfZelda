@@ -1,0 +1,27 @@
+﻿A
+
+Jack Melink
+Mar 10, 2023
+Sprint 3
+
+CSVParser/Room.cs
+Alton Burkholder
+Code Readability
+
+There is some potential for the code to be streamlined logically in several places. Has no impact on functionality or
+understandability howver. Makes sense, parsing blocks from a file and creating a list. Confused about how the while loop
+is implemented in the CSV parser, specifically the mychar[] value in the text. The readability of Room.cs is normal. There
+is a (currently) unnecessary switch case and the Draw() method is empty.
+
+CSVParser/Room.cs
+Alton Burkholder
+Code Quality
+
+The CVSparse seems fairly straightforeward for determining which blocks need to be in which location. It can adopt to many different room styles and created a list of
+blocks for drawwing. It will somehow need to parse a list of collidable rectangles for room boundaries in future implementations. Room likewise will need to hold
+a list of these rectangles that were parsed. This will Define things like doors, entrances/exits by the rectangles and need to be passed into collision detection with
+link and other game objects. The current implementation of both .cs files could easily adapt to these changes. In the csv parse include a row beneath the actual
+room layout that holds data for rectangle and reads from that. One the that is done, a room could have a list of rectangles. This can then be managed using room manager
+to switch rooms. 
+
+

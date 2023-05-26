@@ -1,0 +1,17 @@
+﻿Luke Chesney
+10 April, 2023
+Sprint 4
+
+Reviewing /Sound/SoundManager.cs created by Alton Burkholder
+
+General comments:
+-   Great use of comments throughout. Makes reading code much easier.
+-   Makes use of sound much simpler!
+-   Nice utility methods.
+
+Suggestion:
+-   I would suggest adding a pause function. For example, when the game ends,
+    there is different game over music. Something to work on for next sprint!
+-   I also think it would be a nice feature to have the sounds auto-populate.
+    Sorta like how the CSVs auto populate. Theres probably some drawbacks to
+    this approach too.

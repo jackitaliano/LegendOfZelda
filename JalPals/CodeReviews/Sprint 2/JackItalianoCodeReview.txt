@@ -1,0 +1,13 @@
+﻿Author: Jack Italiano
+Date: 2/20/23
+Sprint 2
+File: ItemManager.cs
+Author of file: Jack Melink
+The code is very readable because the scope of each method is limited to one
+thing. However, there are multiple overloaded methods, and I don't see the use
+for having them overloaded. There should only be one option in these cases.
+Someone could use the no argument constructor, then the no argument draw, which
+would cause a crashing error at runtime.
+
+I suggest removing the overloaded methods to take away the possibility of the
+client misusing the methods.

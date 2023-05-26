@@ -1,0 +1,12 @@
+﻿Author: Alton Burkholder
+Date: 02/20/2023
+Sprint: 2
+Name of File: Keese.cs
+Author being Reviewed: Luke Chensey
+Comments:
+	The code isn't commented which is kind of... irritating. It just makes things harder to understand for the outsider.
+	Some magic numbers show up here and there. I don't really know what "3" means in this context. Why was it chosen?
+	The code does seem fairly intuitive with it's logic. Clever implementation. 
+Suggestions:
+	Comment the code. Explain what the functions calls are doing and what each variable is used for.
+	Try to reduce the number of magic numbers being used.

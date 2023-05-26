@@ -1,0 +1,18 @@
+﻿Luke Chesney
+20 February, 2023
+Sprint 2
+
+Reviewing Link.cs created by Jack Italiano
+
+General comments:
+-   Only complaint in terms of readability is the lack of comments. However, with
+    a quick read through of the code, I was able to collect what the method
+    accomplishes.
+-   In terms of code quality, this looks like a robust template to base our
+    player off of. The class isn't overly reliant on other classes and has the
+    right level of portability.
+
+Specific change:
+-   While a nitpick so early on, some of the link textures cause the character
+    to "jump" up and down or left and right. Likely to do with different texture
+    sizes.

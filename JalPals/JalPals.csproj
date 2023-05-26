@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Menu\**" />
+    <EmbeddedResource Remove="Menu\**" />
+    <None Remove="Menu\**" />
+    <None Remove="CodeReviews\Sprint5\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+    <None Remove="Player\" />
+    <None Remove="Enemies\" />
+    <None Remove="Items\" />
+    <None Remove="CodeReviews\" />
+    <None Remove="Projectiles\" />
+    <None Remove="Collision\" />
+    <None Remove="Doors\" />
+    <None Remove="Content\csv\" />
+    <None Remove="CodeReviews\Sprint 2\" />
+    <None Remove="CodeReviews\Sprint 3\" />
+    <None Remove="CodeReviews\Sprint 3\Task Tracking\" />
+    <None Remove="Walls\" />
+    <None Remove="Menu\" />
+    <None Remove="CodeReviews\Sprint 4\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\SoundEffects\" />
+    <Folder Include="Player\" />
+    <Folder Include="Projectiles\" />
+    <Folder Include="Doors\" />
+    <Folder Include="Content\csv\" />
+    <Folder Include="CodeReviews\Sprint 2\" />
+    <Folder Include="CodeReviews\Sprint 3\" />
+    <Folder Include="CodeReviews\Sprint 3\Task Tracking\" />
+    <Folder Include="Walls\" />
+    <Folder Include="CodeReviews\Sprint 4\" />
+    <Folder Include="CodeReviews\Sprint5\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Commands\ChangeToAnimatedMovingSprite.cs" />
+    <Compile Remove="Commands\ChangeToAnimatedSprite.cs" />
+    <Compile Remove="Commands\ChangeToMovingSprite.cs" />
+    <Compile Remove="Commands\ChangeToStationarySprite.cs" />
+    <Compile Remove="Sprites\AnimatedSprite.cs" />
+    <Compile Remove="Sprites\MovingSprite.cs" />
+    <Compile Remove="Sprites\StationarySprite.cs" />
+    <Compile Remove="Sprites\SpriteManager.cs" />
+    <Compile Remove="Commands\AddText.cs" />
+    <Compile Remove="InventoryOld\IItem.cs" />
+    <Compile Remove="InventoryOld\IInventory.cs" />
+    <Compile Remove="InventoryOld\BluePotionItem.cs" />
+    <Compile Remove="InventoryOld\ItemAnimations.cs" />
+    <Compile Remove="InventoryOld\InventorySlotRectangles.cs" />
+    <Compile Remove="InventoryOld\LinkInventory.cs" />
+    <Compile Remove="InventoryOld\TmpSprint2ItemDisplay.cs" />
+    <Compile Remove="InventoryOld\RedPotionItem.cs" />
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>

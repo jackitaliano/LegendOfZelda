@@ -1,0 +1,16 @@
+﻿Luke Chesney
+13 March, 2023
+Sprint 3
+
+Reviewing /Collisions/CollisionManager.cs created by Jack Italiano
+
+General comments:
+-   Great use of comments throughout. Makes reading code much easier. Especially
+    considering how convoluted collisions can be. Parts that are uncommented
+    make use of clean code and good variable names to increase readability.
+-   Like the use of the generic "IGameObject," makes implementing collisions on
+    future interfaces much more doable.
+
+Suggestion:
+-   Nothing in particular! The functionality is all there. However time will
+    tell on the long term functionality as we add more collisions to the game.

@@ -1,0 +1,39 @@
+﻿Author of the code review
+Date of the code review
+Sprint number
+Name of the .cs file being reviewed
+Author of the .cs file being reviewed
+Number of minutes taken to complete the review
+Specific comments on what is readable and what is not
+In the plaintext file for a code quality review, include the following information:
+
+Author of the code review
+Date of the code review
+Sprint number
+Name of the .cs file being reviewed
+Author of the .cs file being reviewed
+Specific comments on code quality
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+
+Jack Melink
+4/24/23
+
+Sprint 5
+At this point it is hard to determine specific code of individual contributers because we all worked
+together on all parts of the code. All of the requisite .cs files were pretty much made, and I felt code
+was readable and of good quality throughout. Jack Italiano
+did however work on the dungeon zombies room. The implementation was creative, using random integers to
+spawn waves of enemies. The code was quickly understandable in its writing, following much of the logic
+of a normal room.cs but added additional spawn features. It keeps track of waves survived. The code
+quality is great and I feel like I could easily add functionality on top which serves to show its
+understandablity. Additionally, jack refactored room_factory out of rooms themselves, which greatly
+increased clarity of the code. The csv parsing of rooms was removed from rooms. 
+
+     Code can always refactored and cleaned up;  we could continue to refactor to optimize the code but
+ I felt our team did a great job balancing refactoring and working on new features. The code is readable and
+accessible which is important when we are all working on eachothers code, and adding layers of functionality.
+
+SurvivalWave.cs
+SurvivalRoom.cs
+Roomfactory.cs
+

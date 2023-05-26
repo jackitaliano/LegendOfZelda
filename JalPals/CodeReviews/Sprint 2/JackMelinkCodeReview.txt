@@ -1,0 +1,39 @@
+﻿Author of the code review
+Date of the code review
+Sprint number
+Name of the .cs file being reviewed
+Author of the .cs file being reviewed
+Number of minutes taken to complete the review
+Specific comments on what is readable and what is not
+In the plaintext file for a code quality review, include the following information:
+
+Author of the code review
+Date of the code review
+Sprint number
+Name of the .cs file being reviewed
+Author of the .cs file being reviewed
+Specific comments on code quality
+A hypothetical change to make to the game related to file being reviewed and how the current implementation could or could not easily support that change
+
+
+
+Jack Melink Code Readablity Review:
+Alton Burkholder
+Feb 20 2023
+Sprint 2
+Block.cs
+
+Readablity Code Review:
+The code is straightforeward in its readability and easily understandable. It adds comments to members to describe their function and use
+within the code. The use of a state-pattern separated block states nicely and is quickly adaptable. A struct to hold rectangle members for
+animations is something we all used to provide a single point to change data. 
+
+Code Mainitainability:
+The code for blocks and related classes doesnt seem convoluted or difficult to keep track of. Block states are separate classes avoiding
+any giant one class. The was the use of the game parameter passed into the block constructor and is a private member of block. I couldn't find its use, and it may
+be worth refactoring out if block has no need to know about the game object. Additionally for future use, a Block manager might be worth
+implementing so that drawing  and updating large amounts of blocks is centralized in one class. Otherwise, this code is readily expanded upon.
+
+Time: 20 min
+
+
